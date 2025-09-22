@@ -1,50 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT - Version Update: N/A → 1.0.0
+- Initial constitution creation for AI7101 Final Project
+- Added sections: Core Principles, Educational Standards, Development Workflow
+- Removed sections: None
+- Templates requiring updates:
+  ✅ plan-template.md (already has Constitution Check section)
+  ✅ spec-template.md (compatible with educational requirements)
+  ✅ tasks-template.md (compatible with coding best practices)
+- Follow-up TODOs: None - all placeholders filled
+-->
+
+# AI7101 Final Project Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Educational Excellence
+Every feature and implementation MUST serve as a learning tool; Code MUST be thoroughly documented with clear explanations of design decisions and trade-offs; All commits MUST include educational value through clear commit messages explaining the "why" behind changes; Complex algorithms or patterns MUST include inline documentation explaining the approach and alternative solutions considered.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Rationale: This project serves as an educational resource for learning AI implementation patterns and software engineering best practices.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Code Quality Standards
+All code MUST follow established coding conventions and style guides; Every function and class MUST have comprehensive documentation; Code MUST be self-documenting through meaningful variable and function names; All external dependencies MUST be justified and documented; No code duplication - extract common functionality into reusable components.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+Rationale: High-quality, maintainable code is essential for learning and presenting professional software development practices.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Test-Driven Development (NON-NEGOTIABLE)
+Tests MUST be written before implementation; Every feature MUST have corresponding unit tests; Integration tests MUST validate end-to-end functionality; Tests MUST serve as documentation of expected behavior; All tests MUST pass before any commit to main branch.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Rationale: TDD ensures reliable code and provides executable documentation of system behavior, crucial for educational purposes.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Documentation Standards
+Every module MUST have README documentation explaining its purpose and usage; API contracts MUST be documented with clear examples; Setup and installation instructions MUST be comprehensive and tested; All design decisions MUST be documented with rationale; Code comments MUST explain "why" not "what".
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Rationale: Comprehensive documentation is essential for learning, presentation, and future maintenance of the educational project.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Presentation Readiness
+Project structure MUST be organized for easy navigation and understanding; All features MUST be demonstrable with clear examples; Performance metrics and benchmarks MUST be documented; Error handling MUST be robust and educational; Version control history MUST tell a clear story of development progression.
+
+Rationale: The project will be presented and must showcase professional development practices and clear learning outcomes.
+
+## Educational Standards
+
+Project MUST maintain clear separation of concerns for educational clarity; All AI/ML components MUST include explanations of algorithms and model choices; Data flow and system architecture MUST be visually documented; Performance optimizations MUST be documented with before/after comparisons; Security considerations MUST be explained and implemented appropriately.
+
+## Development Workflow
+
+All changes MUST go through feature branches with descriptive names; Pull requests MUST include detailed descriptions of changes and learning outcomes; Code reviews MUST focus on educational value and code quality; Commits MUST be atomic and include clear, educational commit messages; No direct commits to main branch - all changes through pull requests.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other development practices and guidelines. All pull requests and code reviews MUST verify compliance with these principles. Any complexity or deviation from these standards MUST be explicitly justified in documentation. Educational value MUST be prioritized over performance optimizations unless performance is specifically being taught. All team members MUST follow these standards to maintain consistency and learning value throughout the project.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-01-22 | **Last Amended**: 2025-01-22
