@@ -1,6 +1,8 @@
 # Large data files - place in project root directory
 train.csv
 test.csv
+VariableDefinitions.csv
+SampleSubmission.csv
 
 # Jupyter workspace files
 .jupyter/
@@ -15,3 +17,27 @@ __pycache__/
 # Virtual environment
 venv/
 env/
+
+# MacOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE files
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Model files and large outputs
+*.pkl
+*.model
+*.h5
+models/
+outputs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
