@@ -1,50 +1,47 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+Version change: template → 1.0.0
+Added sections: Complete initial constitution for ML project
+Principles defined: 5 core ML/data science principles
+Templates requiring updates: ✅ All templates compatible with ML project structure
+Follow-up TODOs: None - all placeholders filled
+-->
+
+# Expresso Customer Churn Prediction Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Data-First Development
+Every model decision and feature engineering choice MUST be supported by empirical data analysis. No assumptions without validation. All exploratory data analysis must be documented with findings and statistical support. Feature selection requires quantitative justification through correlation analysis, importance scores, or domain expertise validation.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Reproducible Experimentation (NON-NEGOTIABLE)
+Every experiment MUST be tracked with: dataset versions, feature transformations, model parameters, evaluation metrics, and random seeds. Code versioning required for all model training scripts. Results must be reproducible by any team member using documented procedures. MLflow or equivalent experiment tracking mandatory.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Validation-Driven Modeling
+Models MUST demonstrate business value before deployment. Cross-validation required for all model evaluation. Performance metrics must align with business objectives (precision vs recall trade-offs justified). Hold-out test sets remain untouched until final model evaluation. Model performance degradation monitoring required.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Feature Engineering Excellence
+Systematic approach to feature creation with clear documentation. Features must be business-interpretable where possible. Feature pipelines must handle missing data consistently. Domain expertise integration required for feature validation. Feature importance analysis mandatory for model explainability.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Business Impact Focus
+All model development tied to measurable business outcomes: customer retention rates, revenue impact, cost reduction. Model predictions must translate to actionable business decisions. Stakeholder communication requires non-technical explanations. ROI analysis required for model deployment decisions.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Model Development Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+Technical requirements for maintaining model quality and consistency across the project lifecycle.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Model training requires stratified sampling to handle class imbalance. Hyperparameter tuning must use nested cross-validation to prevent overfitting. Model interpretability required through SHAP, LIME, or equivalent techniques. Data leakage prevention through temporal validation splits. Model bias testing across customer segments mandatory.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Quality Assurance
+
+Standards ensuring reliable and trustworthy model outputs for business decision-making.
+
+All data preprocessing steps must be documented and version-controlled. Model performance baselines established using simple heuristics. A/B testing framework required for model deployment validation. Model monitoring dashboards mandatory for production tracking. Regular model retraining schedules based on performance degradation thresholds.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Constitution supersedes all other development practices. All model experiments must verify compliance with data-first and reproducibility principles. Model complexity must be justified against business requirements and interpretability needs. Use project documentation for runtime development guidance and business stakeholder communication.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Amendments require team consensus, documentation updates, and migration plan for existing models. All pull requests must demonstrate adherence to experimental tracking and validation requirements. Model deployment requires sign-off from business stakeholders and technical review.
+
+**Version**: 1.0.0 | **Ratified**: 2025-09-22 | **Last Amended**: 2025-09-22
